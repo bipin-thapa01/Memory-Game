@@ -1,0 +1,237 @@
+.info-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 100px;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.info {
+  display: flex;
+  padding: 5px 40px;
+  justify-content: center;
+  align-items: center;
+  column-gap: 70px;
+  border: 2px solid;
+  border-radius: 90px;
+  width: 800px;
+}
+
+.play-pause
+{
+  width:100px;
+  height: 25px;
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.play-pause:hover
+{
+  border-color: rgb(176, 176, 176);
+  background-color: rgb(176, 176, 176);
+  cursor: pointer;
+  box-shadow: -1px 3px 18px -2px rgba(255,255,255,0.5);
+  -webkit-box-shadow: -1px 3px 18px -2px rgba(255,255,255,0.5);
+  -moz-box-shadow: -1px 3px 18px -2px rgba(255,255,255,0.5);
+}
+
+.back {
+  width: 24px;
+  height: 24px;
+  font-size: 20px;
+  border-right: 2px solid;
+  padding-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back:hover {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.cards
+{
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in;
+}
+
+.cards-rotate
+{
+  transform: rotateY(180deg);
+}
+
+.card1
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card2
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.card1 img, .card2 img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.game-score
+{
+  position: absolute;
+  top: 850px;
+  width: 100vw;
+  height: 50px;
+  padding: 0px 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  left: 0px;
+  border: 2px solid;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+.new-game
+{
+  border: 2px solid;
+  padding: 5px;
+  height: 38px;
+  width: 110px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  box-shadow: -1px 3px 18px -2px rgba(255,255,255,0.5);
+  -webkit-box-shadow: -1px 3px 18px -2px rgba(255,255,255,0.5);
+  -moz-box-shadow: -1px 3px 18px -2px rgba(255,255,255,0.5);
+}
+
+.new-game:hover
+{
+  cursor: pointer;
+  background-color: rgb(174, 173, 173);
+  font-size: 20px;
+  transition: font-size 0.2s ease-in;
+}
+
+.try
+{
+  width: 90px;
+  color: yellowgreen;
+  font-weight: bold;
+}
+
+.correct
+{
+  width: 120px;
+  color: green;
+  font-weight: bold;
+}
+
+.new-game-choice-container
+{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.new-game-choice
+{
+  background-color: white;
+  color: black;
+  width: 400px;
+  height: 300px;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px 0px;
+  z-index: 299;
+  display: none;
+}
+
+.question
+{
+  font-size: 17px;
+  display: flex;
+}
+
+.choices
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 180px;
+  width: 300px;
+}
+
+.choice1, .choice2, .choice3, .choice4, .game-complete-choice1, .game-complete-choice2
+{
+  border: 2px solid;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 200px;
+  height: 40px;
+  font-size: 13px;
+  box-shadow: -1px 3px 18px -2px rgba(47, 47, 47, 0.5);
+  -webkit-box-shadow: -1px 3px 18px -2px rgba(53, 53, 53, 0.5);
+  -moz-box-shadow: -1px 3px 18px -2px rgba(52, 52, 52, 0.5);
+}
+
+.choice1:hover, .choice2:hover, .choice3:hover, .choice4:hover, .game-complete-choice1:hover, .game-complete-choice2:hover
+{
+  background-color: rgb(196, 196, 196);
+  font-size: 15px;
+  transition: font-size 0.2s ease-in;
+}
+
+.game-completed
+{
+  background-color: white;
+  color: black;
+  z-index: 299;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  width: 400px;
+  height: 300px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px 0px;
+  font-size: 17px;
+  display: none;
+}
+
+.game-complete-choices
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  width: 300px;
+}

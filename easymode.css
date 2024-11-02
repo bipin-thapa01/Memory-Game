@@ -1,0 +1,162 @@
+.game-section-container {
+  position: absolute;
+  top: 180px;
+  width: 100vw;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-section {
+  height: 100%;
+  width: 900px;
+  border: 2px solid white;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 10px;
+  background-color: gray;
+}
+
+.holder {
+  width: 211px;
+  height: 285px;
+  position: relative;
+}
+
+@media (max-width:1000px) {
+  .holder {
+    width: 148.07px;
+    height: 200px;
+  }
+
+  .game-section-container {
+    height: 440px;
+  }
+
+  .game-section {
+    width: 646.6px;
+  }
+
+  .game-score {
+    top: 700px;
+    height: 45px;
+  }
+
+  .new-game {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width:850px) {
+  .info {
+    width: 600px;
+    column-gap: 30px;
+    padding: 5px 20px;
+  }
+
+  .play-pause {
+    width: 80px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width:680px) {
+  .holder {
+    width: 125.85px;
+    height: 170px;
+  }
+
+  .game-section {
+    width: 557.4px;
+  }
+
+  .game-section-container {
+    height: 370px;
+    top: 250px;
+  }
+
+  .game-score {
+    top: 670px;
+    height: 35px;
+    justify-content: space-between;
+  }
+
+  .info {
+    width: 500px;
+  }
+}
+
+@media (max-width:570px)
+{
+  .holder {
+    width: 88.842px;
+    height: 120px;
+  }
+  .game-section {
+    width: 220px;
+  }
+  .game-section-container {
+    height: 530px;
+    top: 170px;
+  }
+  .game-score {
+    top: 720px;
+    padding: 0px 10px;
+    border-radius: 10px;
+  }
+  .info {
+    padding: 5px 10px;
+    column-gap: 20px;
+    width: 400px;
+  }
+  .timer
+  {
+    font-size: 10px;
+  }
+  .level
+  {
+    font-size: 10px;
+  }
+  .play-pause {
+    width: 70px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width:380px)
+{
+  .info {
+    padding: 5px 5px;
+    column-gap: 10px;
+    width: 300px;
+    border-radius: 10px;
+  }
+  .timer
+  {
+    font-size: 8px;
+  }
+  .level
+  {
+    font-size: 8px;
+  }
+  .show-timer
+  {
+    font-size: 8px;
+  }
+  .back
+  {
+    font-size: 12px;
+    width: 15px;
+    padding-right: 15px;
+  }
+  .game-score {
+    font-size: 15px;
+  }
+}
